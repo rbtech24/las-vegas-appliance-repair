@@ -31,18 +31,18 @@
   ],
   "redirects": [
     {
-      "source": "/blog",
-      "destination": "/blog/",
-      "permanent": false
+      "source": "/blog/",
+      "destination": "/blog",
+      "permanent": true
     },
     {
       "source": "/blog/index",
-      "destination": "/blog/",
+      "destination": "/blog",
       "permanent": true
     },
     {
       "source": "/blog/index.html",
-      "destination": "/blog/",
+      "destination": "/blog",
       "permanent": true
     },
     {

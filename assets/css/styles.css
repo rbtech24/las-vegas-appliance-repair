@@ -45,6 +45,9 @@ a:hover { text-decoration: underline; color: var(--accent); }
 .topbar-inner { display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; align-items:center; }
 .topbar a { color: #c45a10; }
 .topbar a:hover { color: #0a1f44; }
+@media (max-width: 860px) {
+  .topbar { display: none !important; }
+}
 .topbar strong { color: #0a1f44; font-weight: 600; }
 
 .site-header {
@@ -96,7 +99,7 @@ a:hover { text-decoration: underline; color: var(--accent); }
 .btn:active { transform: translateY(1px); }
 .btn-primary {
   background: linear-gradient(135deg, var(--primary), #e86010);
-  color:#fff !important; box-shadow: 0 4px 20px rgba(244,122,32,.4);
+  color:#fff !important; box-shadow: none;
 }
 .btn-primary:hover { filter: brightness(1.06); }
 .btn-outline { border-color: var(--primary); color: var(--primary) !important; background: transparent; }
@@ -304,7 +307,7 @@ textarea { min-height:140px; resize:vertical; }
   font-size:13px; color:#6b7c93;
 }
 
-/* Mobile app-style bottom bar (phone only) — Home · Call · Schedule · Areas */
+/* Mobile app-style bottom bar (phone only) — Home · Call · Areas */
 .mobile-app-bar {
   display: none;
   position: fixed;
@@ -322,14 +325,13 @@ textarea { min-height:140px; resize:vertical; }
 }
 .appbar-lvar .appbar-inner {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   height: 62px;
   background: #071022;
   border-top: 1px solid rgba(244, 122, 32, 0.55);
   box-shadow:
-    0 -10px 32px rgba(0, 0, 0, 0.45),
-    0 -4px 24px rgba(244, 122, 32, 0.22),
-    inset 0 1px 0 rgba(245, 197, 24, 0.22);
+    0 -6px 20px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(245, 197, 24, 0.12);
 }
 .appbar-lvar a {
   display: flex;
@@ -351,7 +353,7 @@ textarea { min-height:140px; resize:vertical; }
 .appbar-lvar a.active,
 .appbar-lvar a:hover {
   color: #f5c518;
-  text-shadow: 0 0 12px rgba(245, 197, 24, 0.55);
+  text-shadow: none;
 }
 .appbar-lvar a.active::before {
   content: "";
@@ -363,7 +365,7 @@ textarea { min-height:140px; resize:vertical; }
   height: 3px;
   border-radius: 0 0 4px 4px;
   background: linear-gradient(90deg, #f47a20, #f5c518);
-  box-shadow: 0 0 10px rgba(244, 122, 32, 0.7);
+  box-shadow: none;
 }
 .appbar-lvar a.call {
   color: #fff;
@@ -380,7 +382,7 @@ textarea { min-height:140px; resize:vertical; }
   place-items: center;
   background: linear-gradient(145deg, #ff9a40, #e86010 55%, #c44e0a);
   box-shadow:
-    0 4px 16px rgba(244, 122, 32, 0.55),
+    0 2px 8px rgba(0, 0, 0, 0.35),
     0 0 0 3px #071022,
     inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }

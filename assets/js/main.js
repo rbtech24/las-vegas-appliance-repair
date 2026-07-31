@@ -17,7 +17,6 @@
       a.classList.remove('active');
       var key = a.getAttribute('data-nav');
       if (key === 'home' && (path === '/' || path === '')) a.classList.add('active');
-      if (key === 'schedule' && path.indexOf('/contact') !== -1) a.classList.add('active');
       if (key === 'areas' && (path.indexOf('/service-areas') !== -1 || path.indexOf('/areas') !== -1)) a.classList.add('active');
     });
   }
