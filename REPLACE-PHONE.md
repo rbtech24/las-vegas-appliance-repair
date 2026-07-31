@@ -1,4 +1,4 @@
-# Replace demo phone before launch
+# Replace phone before launch
 
 Edit **`site_config.json`**:
 
@@ -9,8 +9,8 @@ Edit **`site_config.json`**:
 
 Then run a project-wide replace:
 
-- Display form: `(702) 555-0199` → your display number  
-- Raw/tel form: `7025550199` → digits only  
+- Display form: `(725) 215-1313` → your display number  
+- Raw/tel form: `7252151313` → digits only  
 - Also update `build_lvar_site.py` constants if you regenerate pages  
 
 Add your Google Business Profile URL to `sameAs` in `site_config.json` and re-run schema injection or tell the agent to refresh schema.

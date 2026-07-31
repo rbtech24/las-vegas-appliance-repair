@@ -1,7 +1,7 @@
 # SEO fixes applied (phone still placeholder)
 
 **Date:** 2026-07-30  
-**Phone:** still demo `(702) 555-0199` — swap later via `site_config.json` (see `REPLACE-PHONE.md`).
+**Phone:** still demo `(725) 215-1313` — swap later via `site_config.json` (see `REPLACE-PHONE.md`).
 
 ## 1) Technical SEO
 - All internal links + canonicals normalized to **clean URLs** (no `.html`)

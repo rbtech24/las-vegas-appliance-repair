@@ -5,7 +5,7 @@ Ultimate local appliance-repair static site for Las Vegas, NV.
 ## Brand
 - **Name:** Las Vegas Appliance Repair Pros
 - **Domain:** https://www.lasvegasappliancerepairpros.com
-- **Phone (demo):** (702) 555-0199 — replace before launch / GBP / ads
+- **Phone (demo):** (725) 215-1313 — replace before launch / GBP / ads
 - **Email:** hello@lasvegasappliancerepairpros.com
 - **Logo:** `assets/images/logo.png` (from Downloads)
 

@@ -154,7 +154,7 @@ def analyze_page(path: Path) -> dict:
     img_empty_alt = sum(1 for i in imgs if re.search(r'\balt=["\']\s*["\']', i, re.I))
     bg_images = len(re.findall(r"background-image\s*:", html, re.I))
     tel = len(re.findall(r"tel:", html, re.I))
-    demo_phone = "(702) 555-0199" in html or "7025550199" in html
+    demo_phone = "(725) 215-1313" in html or "7252151313" in html
     has_address_street = bool(re.search(r"streetAddress|street address", html, re.I))
     # thin local uniqueness signals
     main_m = re.search(r"<main\b[^>]*>([\s\S]*?)</main>", html, re.I)
@@ -409,7 +409,7 @@ def main() -> None:
                 missing_fields,
             )
         if biz.get("telephone") and "555" in str(biz.get("telephone")):
-            add("critical", "Local/NAP", "Schema and site use demo phone 555 — will destroy trust/ads/GBP alignment")
+            add("critical", "Local/NAP", "Schema and site use phone 555 — will destroy trust/ads/GBP alignment")
 
     pages_no_schema = [p for p in pages if p["schema_count"] == 0]
     if pages_no_schema:
@@ -544,7 +544,7 @@ def main() -> None:
     # Demo / trust
     demo_pages = sum(1 for p in pages if p["demo_phone"])
     if demo_pages:
-        add("critical", "Local/NAP", f"Demo phone (702) 555-0199 appears on {demo_pages}/{len(pages)} pages — replace before GSC/ads/GBP")
+        add("critical", "Local/NAP", f"Phone (725) 215-1313 appears on {demo_pages}/{len(pages)} pages — replace before GSC/ads/GBP")
 
     if not any(p["has_street"] for p in pages):
         add(
@@ -635,7 +635,7 @@ def main() -> None:
     lines.append(
         "The site has strong **topical coverage** (services × brands × areas × 100 blogs) and solid basic hygiene "
         "(titles, metas, canonicals, robots, sitemap, OG tags, mobile viewport, call CTAs). "
-        "It is **not yet Map Pack–ready**: demo phone, incomplete LocalBusiness schema (no street/geo/hours/sameAs), "
+        "It is **not yet Map Pack–ready**: phone, incomplete LocalBusiness schema (no street/geo/hours/sameAs), "
         "CSS-background heroes (weak image SEO), heavy template similarity on area/brand pages, and canonical/link "
         "patterns that mix `.html` with clean URLs. Blog scale is an asset only if uniqueness holds under review."
     )
@@ -796,7 +796,7 @@ def main() -> None:
     lines.append("")
     lines.append("### P0 — Before any SEO campaign / GSC push (1–2 days)")
     lines.append("")
-    lines.append("1. Replace **demo phone & email** sitewide; align schema + GBP + citations.")
+    lines.append("1. Replace **phone & email** sitewide; align schema + GBP + citations.")
     lines.append("2. Normalize **canonicals + internal links** to clean URLs (no `.html`); fix sitemap `/blog/` → `/blog`.")
     lines.append("3. Expand **LocalBusiness JSON-LD**: `@type` ApplianceRepair or HomeAndConstructionBusiness + `streetAddress` or SAB wording, `geo`, `openingHoursSpecification`, `sameAs` (GBP), `areaServed` as multi-area list.")
     lines.append("4. Submit sitemap in **Google Search Console** only after P0 NAP is real.")
@@ -852,7 +852,7 @@ def main() -> None:
     lines.append("")
     lines.append(f"- Duplicate title groups: {len(dup_titles)}")
     lines.append(f"- Duplicate description groups: {len(dup_descs)}")
-    lines.append(f"- Demo phone pages: {demo_pages}")
+    lines.append(f"- Phone pages: {demo_pages}")
     lines.append(f"- Canonicals with .html: {len(html_can)}")
     lines.append(f"- Thin non-blog pages (<300w): {len(thin_std)}")
     lines.append(f"- Blog posts <800w: {len(blog_thin)}")

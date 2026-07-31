@@ -1169,7 +1169,7 @@ def update_css() -> None:
 
 def write_phone_readme() -> None:
     (ROOT / "REPLACE-PHONE.md").write_text(
-        f"""# Replace demo phone before launch
+        f"""# Replace phone before launch
 
 Edit **`site_config.json`**:
 

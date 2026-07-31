@@ -11,7 +11,7 @@
 
 ## Executive summary
 
-The site has strong **topical coverage** (services × brands × areas × 100 blogs) and solid basic hygiene (titles, metas, canonicals, robots, sitemap, OG tags, mobile viewport, call CTAs). It is **not yet Map Pack–ready**: demo phone, incomplete LocalBusiness schema (no street/geo/hours/sameAs), CSS-background heroes (weak image SEO), heavy template similarity on area/brand pages, and canonical/link patterns that mix `.html` with clean URLs. Blog scale is an asset only if uniqueness holds under review.
+The site has strong **topical coverage** (services × brands × areas × 100 blogs) and solid basic hygiene (titles, metas, canonicals, robots, sitemap, OG tags, mobile viewport, call CTAs). It is **not yet Map Pack–ready**: phone, incomplete LocalBusiness schema (no street/geo/hours/sameAs), CSS-background heroes (weak image SEO), heavy template similarity on area/brand pages, and canonical/link patterns that mix `.html` with clean URLs. Blog scale is an asset only if uniqueness holds under review.
 
 ### Inventory
 
@@ -43,9 +43,9 @@ The site has strong **topical coverage** (services × brands × areas × 100 blo
 
 ## Issue register (prioritized)
 
-### 1. [CRITICAL] Local/NAP: Demo phone (702) 555-0199 appears on 193/193 pages — replace before GSC/ads/GBP
+### 1. [CRITICAL] Local/NAP: Phone (725) 215-1313 appears on 193/193 pages — replace before GSC/ads/GBP
 
-### 2. [CRITICAL] Local/NAP: Schema and site use demo phone 555 — will destroy trust/ads/GBP alignment
+### 2. [CRITICAL] Local/NAP: Schema and site use phone 555 — will destroy trust/ads/GBP alignment
 
 ### 3. [HIGH] Content: Near-duplicate area pages (template content risk) — **82**
 
@@ -291,7 +291,7 @@ Programmatic local pages (areas/brands) are efficient for coverage but **Google 
 
 ### P0 — Before any SEO campaign / GSC push (1–2 days)
 
-1. Replace **demo phone & email** sitewide; align schema + GBP + citations.
+1. Replace **phone & email** sitewide; align schema + GBP + citations.
 2. Normalize **canonicals + internal links** to clean URLs (no `.html`); fix sitemap `/blog/` → `/blog`.
 3. Expand **LocalBusiness JSON-LD**: `@type` ApplianceRepair or HomeAndConstructionBusiness + `streetAddress` or SAB wording, `geo`, `openingHoursSpecification`, `sameAs` (GBP), `areaServed` as multi-area list.
 4. Submit sitemap in **Google Search Console** only after P0 NAP is real.
@@ -320,7 +320,7 @@ Programmatic local pages (areas/brands) are efficient for coverage but **Google 
 ### home: `index.html`
 
 - **Title (72):** Las Vegas Appliance Repair Pros | Same-Day Appliance Repair Las Vegas NV
-- **Description (138):** Las Vegas Appliance Repair Pros offers refrigerator, washer, dryer, oven, and dishwasher repair across Las Vegas, NV. Call (702) 555-0199.
+- **Description (138):** Las Vegas Appliance Repair Pros offers refrigerator, washer, dryer, oven, and dishwasher repair across Las Vegas, NV. Call (725) 215-1313.
 - **Canonical:** https://www.lasvegasappliancerepairpros.com/
 - **H1:** Las Vegas Appliance Repair That Shows Up
 - **Words (main):** 488
@@ -383,7 +383,7 @@ Programmatic local pages (areas/brands) are efficient for coverage but **Google 
 
 - Duplicate title groups: 3
 - Duplicate description groups: 3
-- Demo phone pages: 193
+- Phone pages: 193
 - Canonicals with .html: 9
 - Thin non-blog pages (<300w): 86
 - Blog posts <800w: 0
