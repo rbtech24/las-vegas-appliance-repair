@@ -449,8 +449,9 @@ a:hover {
   .hero-content {
     padding: 2.5rem 0 2rem;
   }
-  .hero-actions .btn {
-    width: 100%;
+  /* Home hero CTAs: use header/app-bar call on mobile */
+  .hero-actions {
+    display: none !important;
   }
 }
 
