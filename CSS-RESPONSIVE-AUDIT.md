@@ -225,3 +225,20 @@ If you want breadcrumbs **below the white header** (always visible, not on photo
 - `assets/css/styles.css` — full responsive rewrite  
 - `assets/js/main.js` — mobile nav accordion + body lock  
 - `CSS-RESPONSIVE-AUDIT.md` — this document  
+
+---
+
+## Hero background fix (2026-07-31)
+
+**Bug:** SEO pass converted heroes to absolute-positioned `<img class="hero-img|page-hero-img">`. Global `img` rules + flex/min-height caused navy “blank” blocks; photos did not behave as full section backgrounds.
+
+**Fix:** All heroes use **CSS `background-image`** on the section again:
+
+```html
+<section class="hero" style="background-image:url('/assets/images/generated/hero.jpg')">
+<section class="page-hero" style="background-image:linear-gradient(...),url('...')">
+```
+
+CSS: `background-size: cover; background-position: center;` + overlay `::before` for home; page heroes bake gradient into the inline background stack.
+
+**Cache bust:** CSS/JS linked as `styles.css?v=…` / `main.js?v=…` so deploys pick up hero CSS immediately.
