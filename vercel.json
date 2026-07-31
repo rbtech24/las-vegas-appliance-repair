@@ -1,0 +1,69 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/blog",
+      "destination": "/blog/",
+      "permanent": false
+    },
+    {
+      "source": "/blog/index",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/index.html",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/posts/:slug.html",
+      "destination": "/blog/posts/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/services/:slug.html",
+      "destination": "/services/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/brands/:slug.html",
+      "destination": "/brands/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/areas/:slug.html",
+      "destination": "/areas/:slug",
+      "permanent": true
+    }
+  ]
+}
