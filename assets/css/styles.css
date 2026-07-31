@@ -409,9 +409,18 @@ a:hover {
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 4.5rem 0 3.25rem;
+  /* Keep side gutters: do not use width:100% (overrides .container) */
+  width: min(740px, calc(100% - 2rem));
   max-width: 740px;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4.5rem 0 3.25rem;
+  box-sizing: border-box;
+}
+.hero > .container.hero-content {
+  /* same rules when both classes are on one element */
+  width: min(var(--container), calc(100% - 2rem));
+  max-width: 740px;
 }
 .hero .eyebrow {
   display: inline-block;
@@ -446,7 +455,12 @@ a:hover {
   .hero {
     min-height: 58vh;
   }
-  .hero-content {
+  .hero-content,
+  .hero > .container.hero-content {
+    width: calc(100% - 2rem);
+    max-width: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding: 2.5rem 0 2rem;
   }
   /* Home hero CTAs: use header/app-bar call on mobile */
