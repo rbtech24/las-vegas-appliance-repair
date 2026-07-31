@@ -1,0 +1,24 @@
+{
+  "brand": "Las Vegas Appliance Repair Pros",
+  "domain": "https://www.lasvegasappliancerepairpros.com",
+  "city": "Las Vegas",
+  "state": "NV",
+  "email": "hello@lasvegasappliancerepairpros.com",
+  "phone_display": "(702) 555-0199",
+  "phone_raw": "7025550199",
+  "phone_note": "REPLACE phone_display and phone_raw with real number before ads/GBP/GSC push",
+  "tagline": "Same-day appliance repair across the Las Vegas Valley.",
+  "price_range": "$$",
+  "geo": {
+    "latitude": 36.1699,
+    "longitude": -115.1398
+  },
+  "hours": [
+    { "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:00", "closes": "19:00" },
+    { "days": ["Saturday"], "opens": "08:00", "closes": "17:00" },
+    { "days": ["Sunday"], "opens": "09:00", "closes": "15:00" }
+  ],
+  "sameAs": [],
+  "service_area_business": true,
+  "year": 2026
+}
