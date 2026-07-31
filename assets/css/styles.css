@@ -591,6 +591,17 @@ a:hover {
   aspect-ratio: 16 / 10;
   overflow: hidden;
   background: #0b1528;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* Service cards: show full photo (no tight crop / zoom) */
+.service-card .media {
+  aspect-ratio: 4 / 3;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #0a1528;
 }
 .service-card .media img,
 .post-card .media img,
@@ -600,7 +611,12 @@ a:hover {
   height: 100%;
   max-width: none;
   object-fit: cover;
+  object-position: center center;
   display: block;
+}
+.service-card .media img {
+  object-fit: contain;
+  object-position: center center;
 }
 .service-card .body,
 .post-card .body,
